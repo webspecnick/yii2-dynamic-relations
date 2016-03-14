@@ -57,7 +57,7 @@ class DynamicRelations extends Widget
 	{
 		if($request[$name])
 		{
-			if($new = $request[$name]['new'])
+			if(isset($request[$name]['new']) && $new = $request[$name]['new'])
 			{
 				foreach( $new as $useless=>$newattrs)
 				{
